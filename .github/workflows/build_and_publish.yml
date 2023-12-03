@@ -47,7 +47,7 @@ jobs:
 
       - name: Make sure it runs
         run: |
-          poetry run python -m ipython-ctrlr-fzf
+          poetry run python -m ipython_ctrlr_fzf
 
       - name: Poetry Check
         run: |

@@ -6,6 +6,7 @@ authors = ["Mike Bianco <mike@mikebian.co>"]
 license = "MIT"
 readme = "README.md"
 keywords = ["ipython", "fzf", "ipython-extension"]
+homepage = "https://github.com/iloveitaly/ipython-ctrlr-fzf"
 
 [tool.poetry.dependencies]
 python = "^3.10"
