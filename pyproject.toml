@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ipython-ctrl-r-fzf"
+name = "ipython-ctrlr-fzf"
 version = "0.1.0"
 description = "overrides ipython's backwards search to use fzf"
 authors = ["Mike Bianco <mike@mikebian.co>"]
@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 pyfzf = "^0.3.1"
+prompt-toolkit = "^3.0.41"
 
 
 [build-system]
