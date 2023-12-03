@@ -1,3 +1,4 @@
+from shutil import which
 from prompt_toolkit.enums import DEFAULT_BUFFER
 from prompt_toolkit.keys import Keys
 from prompt_toolkit.filters import HasFocus, HasSelection
@@ -31,13 +32,19 @@ def _install_namespace(ipython):
             if not (s in history_set or history_set.add(s))
         ]
 
+        # check if `bat` exists on the system
+        preview_command = "cat"
+
+        if which("bat"):
+            preview_command = "bat --color=always --style=numbers -l py -"
+
         # refresh prompt
         print("", end="\r", flush=True)
         try:
             text = fzf.prompt(
                 history_strings,
                 fzf_options="--no-sort --multi --border --height=80% --margin=1 --padding=1"
-                " --preview 'echo {} | sed \"s/ @@ /\\n/g\" | bat --color=always --style=numbers -l py -'",
+                f" --preview 'echo {{}} | sed \"s/ @@ /\\n/g\" | {preview_command}'",
             )
             # multiple returns get concatenated with an emtpy line in-between
             text = "\n\n".join(text)

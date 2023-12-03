@@ -14,6 +14,8 @@ brew install fzf
 apt-get install fzf
 ```
 
+I'd also recommend installing [bat](https://github.com/sharkdp/bat) for syntax highlighting. It's detected and an advanced preview is shown when available.
+
 Then, install the extension:
 
 ```bash
