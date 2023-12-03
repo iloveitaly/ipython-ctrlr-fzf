@@ -48,7 +48,7 @@ jobs:
       - name: Make sure it runs
         run: |
           set -e
-          apt-get install fzf
+          sudo apt-get install -y fzf
           poetry run python -m ipython_ctrlr_fzf
 
       - name: Poetry Check

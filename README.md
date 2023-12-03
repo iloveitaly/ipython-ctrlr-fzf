@@ -1,4 +1,4 @@
-# Add fzf-powered ctrl+r to ipython
+# Add fzf-powered ctrl+r to ipython [![Release Notes](https://img.shields.io/github/release/iloveitaly/ipython-ctrlr-fzf)](https://github.com/iloveitaly/ipython-ctrlr-fzf/releases)[![Downloads](https://static.pepy.tech/badge/ipython-ctrlr-fzf/month)](https://pepy.tech/project/ipython-ctrlr-fzf)[![Python Versions](https://img.shields.io/pypi/pyversions/ipython-ctrlr-fzf)](https://pypi.org/project/ipython-ctrlr-fzf)![GitHub CI Status](https://github.com/iloveitaly/ipython-ctrlr-fzf/actions/workflows/build_and_publish.yml/badge.svg)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Add fzf-powered ctrl+r to ipython. It's nice.
 
