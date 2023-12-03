@@ -5,6 +5,7 @@ description = "overrides ipython's backwards search to use fzf"
 authors = ["Mike Bianco <mike@mikebian.co>"]
 license = "MIT"
 readme = "README.md"
+keywords = ["ipython", "fzf", "ipython-extension"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
