@@ -1,4 +1,5 @@
 from shutil import which
+import sys
 from prompt_toolkit.enums import DEFAULT_BUFFER
 from prompt_toolkit.keys import Keys
 from prompt_toolkit.filters import HasFocus, HasSelection
@@ -64,7 +65,8 @@ def _install_namespace(ipython):
             Keys.ControlR, filter=(HasFocus(DEFAULT_BUFFER) & ~HasSelection())
         )(fzf_i_search)
     else:
-        print("ipython_ctrlr_fzf: IPython not using prompt_toolkit, not installing")
+        # explicitly print to stderr, some environments actively process stdout
+        print("ipython_ctrlr_fzf: IPython not using prompt_toolkit, not installing", file=sys.stderr)
 
 
 def _uninstall_namespace(ipython):
