@@ -3,6 +3,8 @@
 
 Add fzf-powered ctrl+r to ipython. It's nice.
 
+![demo](./demo.gif)
+
 ## Installation
 
 You must have fzf installed for this to work:
