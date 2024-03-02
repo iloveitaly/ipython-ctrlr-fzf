@@ -23,7 +23,9 @@ def is_in_empty_line(buf):
 def _install_namespace(ipython):
     def fzf_i_search(event):
         history_set = set()
-        history_strings = [i[2] for i in ipython.history_manager.get_tail(5000)][::-1]
+        history_strings = [
+            i[2] for i in ipython.history_manager.get_tail(5000, include_latest=True)
+        ][::-1]
 
         # we replace newlines as fzf can only work on single lines; in the preview and later
         # we reverse this effect
