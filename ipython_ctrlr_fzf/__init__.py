@@ -24,6 +24,7 @@ def _install_namespace(ipython):
     def fzf_i_search(event):
         history_set = set()
         history_strings = [
+            # https://github.com/iloveitaly/ipython-ctrlr-fzf/issues/5
             i[2] for i in ipython.history_manager.get_tail(5000, include_latest=True)
         ][::-1]
 
